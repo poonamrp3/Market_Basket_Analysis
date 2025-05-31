@@ -17,7 +17,7 @@ The complete Jupyter notebook (`main.ipynb`) includes all necessary code and dep
 
 ### Data Requirements
 
-The transaction dataset and all necessary files are included in this repository. No additional data setup is required.
+The transaction dataset is hosted on Google Drive due to file size [https://drive.google.com/file/d/1HoePAcsBkNkrbXkugh3BmXTUgpkbm4Sg/view?usp=sharing]. Download the dataset from the link provided in the notebook and place it in the `data/` directory, or update the file path in the notebook accordingly.
 
 ## Project Structure
 
@@ -25,8 +25,8 @@ The transaction dataset and all necessary files are included in this repository.
 market-basket-analysis/
 │
 ├── main.ipynb              # Complete Jupyter notebook with analysis
-├── data/                   # Data directory (included)
-│   └── Assignment-1_Data.csv # Transaction dataset
+├── data/                   # Data directory (download from Drive link)
+│   └── Assignment-1_Data.csv # Transaction dataset (from Google Drive)
 ├── README.md              # This file
 └── association_rules_*.png # Generated graph visualizations
 ```
@@ -35,7 +35,12 @@ market-basket-analysis/
 
 1. **Clone the repository**
 
-2. **Install dependencies**
+2. **Download the dataset**
+   - The Google Drive link for the dataset is provided in the notebook
+   - Download and place the CSV file in the `data/` directory
+   - Alternatively, update the file path in the notebook to your download location
+
+3. **Install dependencies**
    The notebook includes all necessary installation commands. Simply run the first few cells of `main.ipynb` to install required packages.
 
 3. **Set up Neo4j Database (Required for graph visualization)**
@@ -85,6 +90,12 @@ password = "YOUR_PASSWORD"  # Your instance password
 ### Step 4: Test Connection
 
 The notebook includes connection testing code. Run the Neo4j sections to verify your connection works.
+
+### Important Security Notes:
+- **Never commit credentials**: Use environment variables in production
+- **Keep passwords secure**: Store your Neo4j password safely
+- **Monitor usage**: Free tier has limitations on storage and compute
+
 ### Accessing Your Graph Database
 
 Once the notebook completes execution:
