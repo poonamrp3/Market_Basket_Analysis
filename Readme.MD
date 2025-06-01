@@ -177,10 +177,3 @@ ORDER BY r.confidence DESC
   - Lift = 1: Independence
   - Lift < 1: Negative correlation
 
-### Example Rule
-```
-Antecedent: {White Tea, Green Tea} → Consequent: {Herbal Tea}
-Support: 0.15 (15% of transactions)
-Confidence: 0.85 (85% probability)
-Lift: 2.1 (210% more likely than random)
-```
